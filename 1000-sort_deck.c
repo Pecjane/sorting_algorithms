@@ -108,8 +108,8 @@ void insertion_sort_deck_value_PEC(deck_node_t **deck)
 		tmp = iter_PEC->next;
 		insert_PEC = iter_PEC->prev;
 		while (insert_PEC != NULL &&
-		       insert_PEC->card->kind == iter_PEC->card->kind &&
-		       get_value(insert_PEC) > get_value(iter_PEC))
+				insert_PEC->card->kind == iter_PEC->card->kind &&
+				get_value(insert_PEC) > get_value(iter_PEC))
 		{
 			insert_PEC->next = iter_PEC->next;
 			if (iter_PEC->next != NULL)
